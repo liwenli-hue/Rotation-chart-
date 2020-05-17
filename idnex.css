@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.wrapper {
+    position: relative;
+    min-width:1133px;
+    height:420px;
+    border:1px solid #000;
+}
+.wrapper .box {
+    position: relative;
+    width:100%;
+    height:100%;
+}
+.wrapper .box ul li{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+}
+.wrapper .box ul li.show {
+    opacity:1;
+    transition: opacity 0.1s linear;
+}
+
+.wrapper .box  ul li img{
+    width:100%;
+    height:100%;
+}
+/* 右侧列表 */
+.wrapper .right-nav {
+    position: absolute;
+    width:260px;
+    height:420px;
+    background:url('./img/bg.png') 0 repeat-x;;
+    right:120px;
+    top:0;
+}
+.wrapper .right-nav  ul {
+    position: absolute;
+    width:100%;
+    height:280px;
+    top:50%;
+    left:0;
+    margin-top:-140px;
+    /* box-sizing: border-box; */
+}
+.wrapper .right-nav  ul  li {
+    cursor: pointer;
+    height:32px;
+    padding:0px 20px;
+}
+.wrapper .right-nav  ul li h2{
+    /* display:inline-block; */
+    font-size:14px;
+    color:#fff;
+    width:100%;
+    /* 文字溢出打点 */
+    overflow: hidden;
+    text-overflow:ellipsis ;
+    white-space: nowrap;
+    line-height: 32px;
+}
+.wrapper .right-nav  ul li span:nth-child(1){
+    display: inline-block;
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 700;
+    background: hsla(0,0%,100%,.15);
+}
+.wrapper .right-nav  ul li:nth-child(1) span{
+    background: #fd537f;
+}
+.wrapper .right-nav  ul li:nth-child(2) span{
+    background: #f2a20c;
+}
+.wrapper .right-nav  ul li:nth-child(3) span{
+    background: #148aff;
+}
+
+.wrapper .right-nav  ul li div {
+    display:none;
+    font-size:12px;
+    color:#fff;
+}
+.wrapper .right-nav  ul li.active {
+    height:44px;
+    background: rgba(20,138,155,.2);
+    padding:15px 20px;
+}
+.wrapper .right-nav  ul li.active h2{
+    font-size: 20px;
+}
+.wrapper .right-nav  ul li.active div{
+    display:block;
+}
+

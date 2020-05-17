@@ -1,0 +1,1 @@
+所需掌握知识点：html 标签   css定位  css基本样式属性  js定时器 js鼠标事件  jsdom操作 
